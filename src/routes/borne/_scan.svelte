@@ -66,9 +66,11 @@
 		return externalRequest;
 	}
 
-	async function onValid() {
-		if (config.external_requests && config.external_requests.accepted.url)
+	async function onValid({ first_name, last_name }: CommonCertificateInfo) {
+		if (config.external_requests && config.external_requests.accepted.url) {
+			config.external_requests.accepted.body = JSON.stringify({ firstName: first_name, lastName: last_name });
 			return makeRequest(config.external_requests.accepted);
+		}
 	}
 
 	async function onInvalid() {
@@ -80,7 +82,10 @@
 		if (codeFoundPromise) return;
 		console.log('Detected code before reset: ', code_input);
 		codeFoundPromise = validateCertificateCode(code_input);
-		codeFoundPromise.then(onValid, onInvalid);
+		codeFoundPromise.then((info) => {
+			onValid(info);
+			onInvalid();
+		});
 		timeout = undefined;
 		code = '';
 		reset_timeout = setTimeout(() => {
