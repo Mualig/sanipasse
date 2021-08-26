@@ -1,6 +1,9 @@
 {
 	"name": "sanipasse",
 	"version": "1.2.1",
+	"engines" : {
+      "node" : ">=16"
+    },
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
