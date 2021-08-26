@@ -11,21 +11,21 @@
 </script>
 
 <svelte:head>
-	<title>Sanipasse: Vérification de pass sanitaire</title>
+	<title>SaniBAMHE: Vérification de pass sanitaire</title>
 	<meta
 		name="description"
-		content="Sanipasse permet de vérifier les certificats de test et de vaccination,
+		content="SaniBAMHE permet de vérifier les certificats de test et de vaccination,
 et d'organiser des évènements en toute sécurité."
 	/>
 </svelte:head>
 
 <header>
-	<h1>Bienvenue sur Sanipasse</h1>
+	<h1>Bienvenue sur SaniBAMHE</h1>
 
 	<ShowPromiseError promise={$invitedTo.promise} />
 
 	<p>
-		Sanipasse est un logiciel libre de vérification des certificats de test ou de vaccination, et
+		SaniBAMHE est un logiciel libre de vérification des certificats de test ou de vaccination, et
 		d'organisation d’événements respectueux des règles sanitaires.
 	</p>
 	<p>
@@ -43,11 +43,11 @@ et d'organiser des évènements en toute sécurité."
 <footer class="mb-2">
 	{#if !$invitedTo.eventId}
 		<p>
-			<b>Sanipasse borne</b> permet de mettre en place une borne autonome de contrôle des passes sanitaires,
+			<b>SaniBAMHE borne</b> permet de mettre en place une borne autonome de contrôle des passes sanitaires,
 			munie d'un scanner de QR code physique ou d’une webcam.
 		</p>
 		<Row>
-			<a href="/borne/config" class="btn btn-primary">🤖 Configurer Sanipasse borne</a>
+			<a href="/borne/config" class="btn btn-primary">🤖 Configurer SaniBAMHE borne</a>
 		</Row>
 	{/if}
 	<Wallet />

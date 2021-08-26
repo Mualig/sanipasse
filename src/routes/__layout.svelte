@@ -18,14 +18,14 @@
 </script>
 
 <svelte:head>
-	<title>Sanipasse - vérification de pass sanitaire</title>
+	<title>SaniBAMHE - vérification de pass sanitaire</title>
 </svelte:head>
 
 {#if !hide_menu}
 	<Navbar color="light" light expand="md">
 		<NavbarBrand href="/">
 			<Icon name="calendar2-check" />
-			Sanipasse
+			SaniBAMHE
 		</NavbarBrand>
 		<NavbarToggler on:click={() => (isOpen = !isOpen)} class="me-2" />
 		<Collapse {isOpen} navbar expand="md" on:update={onupdate}>

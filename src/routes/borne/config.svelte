@@ -52,10 +52,10 @@
 </script>
 
 <svelte:head>
-	<title>Borne de contrôle du passe sanitaire Sanipasse</title>
+	<title>Borne de contrôle du passe sanitaire SaniBAMHE</title>
 	<meta
 		name="description"
-		content="Sanipasse est un logiciel libre et gratuit qui fournit une interface de scan automatisé des passes sanitaires."
+		content="SaniBAMHE est un logiciel libre et gratuit qui fournit une interface de scan automatisé des passes sanitaires."
 	/>
 </svelte:head>
 
@@ -63,9 +63,9 @@
 	Chargement de la configuration...
 {/await}
 
-<h1>Configuration de l'interface de validation des passes <i>Sanipasse borne</i></h1>
+<h1>Configuration de l'interface de validation des passes <i>SaniBAMHE borne</i></h1>
 <p>
-	<i>Sanipasse borne</i> est un logiciel libre et gratuit à installer sur une borne de contrôle automatique
+	<i>SaniBAMHE borne</i> est un logiciel libre et gratuit à installer sur une borne de contrôle automatique
 	des pass sanitaires.
 </p>
 <p>
