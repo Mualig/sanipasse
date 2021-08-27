@@ -68,7 +68,10 @@
 
 	async function onValid({ first_name, last_name }: CommonCertificateInfo) {
 		if (config.external_requests && config.external_requests.accepted.url) {
-			config.external_requests.accepted.body = JSON.stringify({ firstName: first_name, lastName: last_name });
+			config.external_requests.accepted.body = JSON.stringify({
+				firstName: first_name,
+				lastName: last_name
+			});
 			return makeRequest(config.external_requests.accepted);
 		}
 	}

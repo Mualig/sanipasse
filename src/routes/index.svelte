@@ -29,8 +29,8 @@ et d'organiser des évènements en toute sécurité."
 		d'organisation d’événements respectueux des règles sanitaires.
 	</p>
 	<p>
-		La vérification proposée ci-dessous est <a href="apropos#donnees">strictement privée</a>, et
-		vos données ne quittent jamais votre appareil.
+		La vérification proposée ci-dessous est <a href="apropos#donnees">strictement privée</a>, et vos
+		données ne quittent jamais votre appareil.
 	</p>
 </header>
 
